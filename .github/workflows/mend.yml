@@ -1,13 +1,14 @@
 name: "mend"
 
-on:
-  pull_request:
-    branches:
-      - "main"
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - "main"
+#   schedule:
+#     - cron: "0 0 * * *"
+#   workflow_dispatch:
+# 
 jobs:
 
   mend:

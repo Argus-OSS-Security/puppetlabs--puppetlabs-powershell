@@ -1,15 +1,16 @@
 name: "ci"
 
-on:
-  pull_request:
-    branches:
-      - "main"
-  pull_request_target:
-    types: [labeled, reopened]
-    branches:
-      - "main"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - "main"
+#   pull_request_target:
+#     types: [labeled, reopened]
+#     branches:
+#       - "main"
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 

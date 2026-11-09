@@ -1,9 +1,10 @@
 name: "Fork CI Label Guard"
 
-on:
-  pull_request_target:
-    types: [synchronize, closed]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [synchronize, closed]
+# 
 permissions:
   pull-requests: write
 
